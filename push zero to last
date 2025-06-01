@@ -1,0 +1,27 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan=new Scanner(System.in);
+	   List<Integer>chocolate=new ArrayList<>();
+	    int n=scan.nextInt();
+	    int zerocount=0;
+	    int []arr=new int [n];
+	    for(int i=0;i<n;i++)
+	    {
+	        arr[i]=scan.nextInt();
+	        if(arr[i]!=0)
+	        {
+	        chocolate.add(arr[i]);
+	        }
+	        else{
+	            zerocount++;
+	        }
+	    }
+	        for(int i=0;i<zerocount;i++)
+	        {
+	            chocolate.add(0);
+	        }
+	    System.out.println(chocolate);
+	}
+}
